@@ -1,0 +1,172 @@
+
+.navbar{
+    background-color: #f8f5f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navbar-brand img{
+    width: 200px;
+    margin: 5px;
+}
+
+.navbar-nav{
+    justify-content: end;
+}
+
+.nav-item a{
+    font-size: 20px;
+    
+}
+
+.carousel-slide{
+    margin-top: 90px;
+    width: 100%;
+}
+.text-index{
+    text-align: center;
+    padding: 30px;
+}
+
+.text-index h1{
+    font-size: 40px;
+    color: #68A173;
+
+}
+
+.text-index p{
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
+
+.text{
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+
+}
+
+.text h1{
+    font-size: 40px;
+    color: #68A173;
+}
+
+.text p{
+    font-size: 20px;
+    color: black;
+    line-height: 1.5;
+}
+
+/*GRIDS PARA LOS TRATAMIENTOS / RESPONSIVE*/
+.contenedor-t{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    background-color: #f8f5f2;
+}
+
+@media (max-width: 768px) {
+    .contenedor-t {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-t {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.caja-t{
+    padding: 20px;
+    text-align: center;
+}
+
+.caja-t h2{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+.caja-t p{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+.caja-t img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20%;
+    border-color:#68A173;
+    border-style:dashed;
+    padding: 5px; 
+}
+
+.caja-t a{
+    text-decoration: none;
+    color: #68A173;
+}
+
+/*TRATAMIENTOS GRID*/
+
+.grid-corp{
+    display: grid;
+
+    grid-template-areas:
+    "text-corp text-corp "
+    "bene-corp usos-corp"
+    ;
+    gap: 15px;
+    margin: 30px;
+}
+.grid-corp p{
+    font-size: 20px;
+}
+
+.grid-corp h1{
+    font-size: 30px;
+}
+
+.grid-corp li{
+    text-align: left;
+    font-size: 20px;
+}
+
+.text-corp{
+    grid-area: text-corp;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.bene-corp{
+    grid-area: bene-corp;
+    background-color:#f8f5f2;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #68A173;
+    border-style: dashed;
+    text-align: center;
+}
+.usos-corp{
+    grid-area: usos-corp;
+    background-color:#f8f5f2;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #68A173;
+    border-style: dashed;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+
