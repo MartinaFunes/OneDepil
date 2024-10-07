@@ -1,0 +1,159 @@
+@import 'variables';
+
+//extend y mixin
+
+.textbase{
+    text-align: center;
+    padding: 30px;
+    h1{
+        font-size: $h1text;
+        color: $hcolor;
+    }
+    p{
+        font-size: $text;
+        line-height: 1.5;
+    }
+    a{
+        text-decoration: none;
+        color: $hcolor;
+    }
+}
+
+.uso-bene{
+    grid-area: usos-corp;
+    background-color:#f8f5f2;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #68A173;
+    border-style: dashed;
+    text-align: center;
+}
+
+//codigo
+
+.navbar{
+    background-color: $backcolor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .navbar-brand img{
+        width: 200px;
+        margin: 5px;
+    }
+    .navbar-nav{
+        justify-content: end;
+    }
+    a{
+        font-size: 20px;
+    }
+}
+
+.carousel-slide{
+    margin-top: 90px;
+    width: 100%;
+}
+
+.text-index{
+    @extend .textbase;
+}
+
+.text{
+    text-align: center;
+    padding: 30px;
+    margin-top: 100px;
+
+    @extend .textbase;
+}
+
+/*GRIDS PARA LOS TRATAMIENTOS / RESPONSIVE*/
+.contenedor-t{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    background-color: $backcolor;
+}
+
+@media (max-width: 768px) {
+    .contenedor-t {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-t {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.caja-t{
+    padding: 20px;
+    text-align: center;
+    @extend .textbase;
+
+    img{
+        margin-bottom: 20px;
+        width: 250px;
+        height: 250px;
+        border-radius: 20%;
+        border-color:$hcolor;
+        border-style:dashed;
+        padding: 5px; 
+    }
+}   
+
+/*TRATAMIENTOS GRID*/
+
+.grid-corp{
+    display: grid;
+
+    grid-template-areas:
+    "text-corp text-corp "
+    "bene-corp usos-corp"
+    ;
+    gap: 15px;
+    margin: 30px;
+}
+
+.text-corp{
+    grid-area: text-corp;
+    padding: 20px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.grid-corp{
+    p{
+        font-size: $text
+    }
+    h1{
+        font-size: $h1text
+    }
+    li{
+        text-align: left;
+        font-size: 20px;
+    }
+}
+
+.bene-corp{
+    @extend .uso-bene;
+}
+
+.usos-corp{
+    @extend .uso-bene;
+}
+
+.bene-corp{
+    grid-area: bene-corp;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: $hcolor;
+    border-style: dashed;
+    text-align: center;
+}
+
+footer img{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
