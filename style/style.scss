@@ -1,5 +1,4 @@
 @import 'variables';
-
 //extend y mixin
 
 .textbase{
@@ -19,9 +18,11 @@
     }
 }
 
+//uso de gradiantes
+
 .uso-bene{
     grid-area: usos-corp;
-    background-color:#f8f5f2;
+    background: radial-gradient(circle, rgba(236,247,238,1) 66%, rgba(217,255,225,1) 96%);
     padding: 20px;
     border-radius: 20px;
     border-color: #68A173;
@@ -31,8 +32,10 @@
 
 //codigo
 
+//uso de gradiantes
+
 .navbar{
-    background-color: $backcolor;
+    background: linear-gradient(90deg, rgba(255,248,240,1) 52%, rgba(244,216,188,1) 100%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,6 +49,13 @@
     }
     a{
         font-size: 20px;
+    }
+
+//transicion y gradiantes
+
+    .nav-item:hover{
+        background: radial-gradient(circle, rgba(251,234,216,1) 94%, rgba(255,198,138,1) 100%);
+        border-radius: 20%;
     }
 }
 
@@ -124,10 +134,11 @@
 
 .grid-corp{
     p{
-        font-size: $text
+        font-size: $text;
     }
     h1{
-        font-size: $h1text
+        font-size: $h1text;
+        color: $hcolor;
     }
     li{
         text-align: left;

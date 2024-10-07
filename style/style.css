@@ -17,7 +17,7 @@
 
 .uso-bene, .usos-corp, .bene-corp {
   grid-area: usos-corp;
-  background-color: #f8f5f2;
+  background: radial-gradient(circle, rgb(236, 247, 238) 66%, rgb(217, 255, 225) 96%);
   padding: 20px;
   border-radius: 20px;
   border-color: #68A173;
@@ -26,7 +26,7 @@
 }
 
 .navbar {
-  background-color: #f8f5f2;
+  background: linear-gradient(90deg, rgb(255, 248, 240) 52%, rgb(244, 216, 188) 100%);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -40,6 +40,10 @@
 }
 .navbar a {
   font-size: 20px;
+}
+.navbar .nav-item:hover {
+  background: radial-gradient(circle, rgb(251, 234, 216) 94%, rgb(255, 198, 138) 100%);
+  border-radius: 20%;
 }
 
 .carousel-slide {
@@ -105,6 +109,7 @@
 }
 .grid-corp h1 {
   font-size: 40px;
+  color: #68A173;
 }
 .grid-corp li {
   text-align: left;
